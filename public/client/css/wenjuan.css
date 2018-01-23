@@ -1,0 +1,99 @@
+.wenjuan h1 {
+    font-size: 24px !important;
+    font-weight: bold;
+    color: #19a8ee;
+    text-align: center;
+    line-height:40px;
+    padding-bottom:20px;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #e5e5e5;
+}
+
+.wenjuan .items li {
+    width:100%;
+    float: left;
+    margin-bottom:30px;
+    padding-bottom: 30px;
+    border-bottom: 1px dashed #e5e5e5;
+}
+.wenjuan .items li .name {
+    font-weight:bolder;
+    font-size:16px;
+    line-height:30px;
+}
+
+.wenjuan .items li .radio {
+    line-height:40px;
+}
+.wenjuan .items li .radio span {
+    padding-left:23px;
+    position: relative;
+    float: left;
+    margin-right:20px;
+    cursor: pointer;
+}
+.wenjuan .items li .radio span i {
+    background: url(../images/preview/radio.gif) no-repeat 0 0;
+    width: 18px;
+    height: 16px;
+    position: absolute;
+    top:50%;
+    left:0;
+    margin-top:-8px;
+}
+.wenjuan .items li .radio span.active i {
+    background-position: 0 -16px;
+}
+.wenjuan .btns {
+    width:100%;
+    float: left;
+    text-align: center;
+
+}
+.wenjuan .btns a {
+    padding:10px 35px;
+    background: #19a8ee;
+    color: #fff;
+    font-size:20px;
+    display: inline-block;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

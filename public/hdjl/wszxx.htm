@@ -1,0 +1,871 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta charset="UTF-8">
+    <title>互动交流-扎兰屯市人民政府</title>
+    <link rel="stylesheet" href="/client/css/common.css">
+    <link rel="stylesheet" href="/client/css/layouts.css?t=1511149554">
+    </head>
+
+<body>
+    <div class="head">
+    <div class="top">
+        <div class="hd">
+            <div class="weather">
+                <span style="float:left;">
+                  <iframe allowtransparency="true" frameborder="0" width="180" height="36" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=3&z=2&t=0&v=0&d=3&bd=0&k=000000&f=ffffff&ltf=ffffff&htf=ffffff&q=1&e=1&a=1&c=54511&w=180&h=36&align=left"></iframe>
+                </span>
+                <span id="nowDateTimeSpan"></span>
+            </div>
+            <div class="links">
+                <div class="search " id="search">
+                    <input class="ipt" type="text" placeholder="搜索扎兰屯新闻">
+                    <span class="submit"></span>
+                </div>
+                <span>|</span>
+                <a href="#" target="_blank">安卓版</a>
+                <span>|</span>
+                <a href="" target="_blank">苹果版</a>
+                <span>|</span>
+                <a href="" target="_blank">微信版</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="header">
+    <div class="logo">
+        <a href="/" target="_blank"><img src="/client/images/logo.png?t=2017" alt=""></a>
+    </div>
+    <img class="bg" src="/client/images/mbg1.jpg" alt="">
+</div>
+
+    <style>
+.theme3 .dd {
+    border-bottom: 2px solid #e5e5e5;
+}
+.theme3 .dd .link-dt a {
+    color: #9f0007;
+}
+#zhalan .item {
+    width:190px;
+}
+#xinwen .item {
+    width:230px;
+}
+#hudong .item {
+    width:190px;
+}
+</style>
+<div class="nav" id="nav">
+    <div class="theme3">
+        <div class="hd">
+            <ul class="dt">
+                <li>
+                    <a target="_blank" class="link-nav" href="/">首页</a>
+                </li>
+                <li id="zhalan">
+                    <a target="_blank" class="link-nav" href="/zhalan.html">走近扎兰</a>
+                    <div class="dd">
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/zhalan.html?activeIndex=0">自然地理</a>
+                            </div>
+                        </div>
+                        <!-- //End 自然地理 -->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/zhalan.html?activeIndex=1">历史文化</a>
+                            </div>
+                        </div>
+                        <!-- //End 历史文化 -->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/zhalan.html?activeIndex=2">行政区划</a>
+                            </div>
+                        </div>
+                        <!-- //End 行政区划 -->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/zhalan.html?activeIndex=3">人口概况</a>
+                            </div>
+                        </div>
+                        <!-- //End 人口概况 -->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/zhalan.html?activeIndex=4">民族特征</a>
+                            </div>
+                        </div>
+                        <!-- //End 民族特征 -->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/zhalan.html?activeIndex=5">经济发展</a>
+                            </div>
+                        </div>
+                        <!-- //End 经济发展 -->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/zhalan.html?activeIndex=6">社会事业</a>
+                            </div>
+                        </div>
+                        <!-- //End 社会事业 -->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/zhalan.html?activeIndex=7">民生保障</a>
+                            </div>
+                        </div>
+                        <!-- //End 民生保障 -->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/zhalan.html?activeIndex=8">名优特产</a>
+                            </div>
+                        </div>
+                        <!-- //End 名优特产 -->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/zhalan.html?activeIndex=9">革命老区</a>
+                            </div>
+                        </div>
+                        <!-- //End 革命老区 -->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/zhalan.html?activeIndex=10">扎兰旅游</a>
+                            </div>
+                        </div>
+                        <!-- //End 扎兰旅游 -->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/zhalan.html/">扎兰名片</a>
+                            </div>
+                        </div>
+                        <!-- //End 扎兰名片 -->
+                    </div>
+                </li>
+                <li id="xinwen">
+                    <a target="_blank" class="link-nav" href="/news">新闻动态</a>
+                    <div class="dd">
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/news/211">政务要闻</a>
+                            </div>
+                        </div>
+                        <!-- //End 政务要闻 -->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/news/212">部门动态</a>
+                            </div>
+                        </div>
+                        <!-- //End 部门动态 -->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/news/213">乡镇之窗</a>
+                            </div>
+                        </div>
+                        <!-- //End 乡镇之窗 -->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/news/214">视频新闻</a>
+                            </div>
+                        </div>
+                        <!-- //End 视频新闻 -->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/news/610">通知公告</a>
+                            </div>
+                        </div>
+                        <!-- //End 通知公告 -->
+                    </div>
+                </li>
+                <li>
+                    <a target="_blank" class="link-nav" href="/government">政务公开</a>
+                    <div class="dd">
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/government/37">领导之窗</a>
+                            </div>
+                            <div class="link-dd">
+                                <a target="_blank" href="/government/95">市委领导</a>
+                                <a target="_blank" href="/government/96">市人大领导</a>
+                                <a target="_blank" href="/government/97">市政府领导</a>
+                                <a target="_blank" href="/government/98">市政协领导</a>
+                            </div>
+                        </div>
+                        <!-- //ENd  领导之窗-->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/government/61">政府信息公开</a>
+                            </div>
+                            <div class="link-dd">
+                                <a target="_blank" href="/government/48">依法行政</a>
+                                <a target="_blank" href="/government/266">政府部门信息公开</a>
+                                <a target="_blank" href="/government/267">乡镇街道信息公开</a>
+                                <a target="_blank" href="/government/238">企事业单位信息公开</a>
+                                <a target="_blank" href="/government/61">公开指南</a>
+                            </div>
+                        </div>
+                        <!-- //ENd  政府信息公开-->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="">政务查阅</a>
+                            </div>
+                            <div class="link-dd">
+                                <a target="_blank" href="http://www.gov.cn/guowuyuan/index.htm">国务院文件</a>
+                                <a target="_blank" href="http://www.nmg.gov.cn/">自治区文件</a>
+                                <a target="_blank" href="/government/605">市政府文件</a>
+                                <a target="_blank" href="/government/162">政办文件</a>
+                                <a target="_blank" href="/government/247">工作报告</a>
+                                <a target="_blank" href="/government/59">公开制度</a>
+                                <a target="_blank" href="/government/62">公开年报</a>
+                                <a target="_blank" href="/government/38">公开目录</a>
+                                <a target="_blank" href="/government/519">政府公报</a>
+                                <a target="_blank" href="/government/616">重点领域</a>
+                                <a target="_blank" href="/government/167">政策解读</a>
+                                <a target="_blank" href="/government/603">新闻发布会</a>
+                                <a target="_blank" href="/government/53">规划计划</a>
+                            </div>
+                        </div>
+                        <!-- //ENd  政务查阅-->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/government/616">重点领域</a>
+                            </div>
+                            <div class="link-dd">
+                                <a target="_blank" href="/government/###">全责清单</a>
+                                <a target="_blank" href="/government/254">财政资金</a>
+                                <a target="_blank" href="/government/256">扶贫工作</a>
+                                <a target="_blank" href="/government/257">公共资源配置</a>
+                                <a target="_blank" href="/government/543">社会救助</a>
+                            </div>
+                        </div>
+                        <!-- //ENd  重点领域-->
+                    </div>
+                </li>
+                <li id="hudong">
+                    <a target="_blank" class="link-nav" href="/interactive">互动交流</a>
+                    <div class="dd">
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/hdjl/szxx.htm">市长信箱</a>
+                            </div>
+                        </div>
+                        <!-- //End 互动交流 -->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/hdjl/bmxx.htm">部门信箱</a>
+                            </div>
+                        </div>
+                        <!-- //End 部门信箱 -->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/hdjl/myzj.htm">征集调查</a>
+                            </div>
+                        </div>
+                        <!-- //End 民意征集 -->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/preview/online.html">网上投诉</a>
+                            </div>
+                        </div>
+                        <!-- //End 网上投诉 -->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="#">政务微信</a>
+                            </div>
+                        </div>
+                        <!-- //End 政务微信 -->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="http://weibo.com/zltzwgk">政务微博</a>
+                            </div>
+                        </div>
+                        <!-- //End 政务微博 -->
+                    </div>
+                </li>
+                <li>
+                    <a target="_blank" class="link-nav" href="/serve/">办事服务</a>
+                    <div class="dd">
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/serve/79">综合服务</a>
+                            </div>
+                            <div class="link-dd">
+                                <a target="_blank" href="/serve/87">外事侨务</a>
+                                <a target="_blank" href="/serve/221">政府法制</a>
+                                <a target="_blank" href="/serve/89">金融服务</a>
+                                <a target="_blank" href="/serve/90">电子商务</a>
+                                <a target="_blank" href="/serve/91">就业创业</a>
+                                <a target="_blank" href="/serve/93">党建阵地</a>
+                                <a target="_blank" href="/serve/520">黑木耳专栏</a>
+                                <a target="_blank" href="/serve/521">红十字会</a>
+                            </div>
+                        </div>
+                        <!-- //End 综合服务 -->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/serve/264">重点办事服务</a>
+                            </div>
+                            <div class="link-dd">
+                                <a target="_blank" href="/serve/528">户籍和身份证办理</a>
+                                <a target="_blank" href="/serve/529">生育服务</a>
+                                <a target="_blank" href="/serve/530">保障性住房申请</a>
+                                <a target="_blank" href="/serve/531">商事登记</a>
+                            </div>
+                        </div>
+                        <!-- //End 重点办事服务 -->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/serve/263">公共服务</a>
+                            </div>
+                            <div class="link-dd">
+                                <a target="_blank" href="/serve/522">教育培训</a>
+                                <a target="_blank" href="/serve/523">医疗卫生</a>
+                                <a target="_blank" href="/serve/524">劳动就业</a>
+                                <a target="_blank" href="/serve/525">社会保障</a>
+                                <a target="_blank" href="/serve/526">招商引资</a>
+                                <a target="_blank" href="/serve/527">休闲旅游</a>
+                            </div>
+                        </div>
+                        <!-- //End 公共服务 -->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/serve/77">服务个人</a>
+                            </div>
+                            <div class="link-dd">
+                                <a target="_blank" href="/serve/532">婚姻生育</a>
+                                <a target="_blank" href="/serve/533">户籍护照</a>
+                                <a target="_blank" href="/serve/534">文化教育</a>
+                                <a target="_blank" href="/serve/535">人事人才</a>
+                                <a target="_blank" href="/serve/536">医疗卫生</a>
+                                <a target="_blank" href="/serve/537">社会保障</a>
+                                <a target="_blank" href="/serve/538">劳动就业</a>
+                                <a target="_blank" href="/serve/539">消费维权</a>
+                                <a target="_blank" href="/serve/540">公安司法</a>
+                                <a target="_blank" href="/serve/541">交通出行</a>
+                                <a target="_blank" href="/serve/542">土地房产</a>
+                                <a target="_blank" href="/serve/543">社会救助</a>
+                                <a target="_blank" href="/serve/544">殡葬管理</a>
+                                <a target="_blank" href="/serve/545">公共事业</a>
+                            </div>
+                        </div>
+                        <!-- //End 服务个人 -->
+                        <div class="item">
+                            <div class="link-dt">
+                                <a target="_blank" href="/serve/78">服务企业</a>
+                            </div>
+                            <div class="link-dd">
+                                <a target="_blank" href="/serve/546">开办设立</a>
+                                <a target="_blank" href="/serve/547">企业变更</a>
+                                <a target="_blank" href="/serve/548">企业注销</a>
+                                <a target="_blank" href="/serve/549">年检年审</a>
+                                <a target="_blank" href="/serve/550">企业纳税 </a>
+                                <a target="_blank" href="/serve/551">质量监督</a>
+                                <a target="_blank" href="/serve/552">安全生产</a>
+                                <a target="_blank" href="/serve/553">科技服务</a>
+                                <a target="_blank" href="/serve/554">知识产权</a>
+                                <a target="_blank" href="/serve/555">对外贸易</a>
+                                <a target="_blank" href="/serve/556">质量监督</a>
+                            </div>
+                        </div>
+                        <!-- //End 服务企业 -->
+                        <div class="item" style="width:890px;">
+                            <div class="link-dt">
+                                <a target="_blank" href="/serve/">行政审批</a>
+                            </div>
+                            <div class="link-dd">
+                                <a target="_blank" href="/serve/558">经信局</a>
+                                <a target="_blank" href="/serve/559">商务粮食局</a>
+                                <a target="_blank" href="/serve/560">统计局</a>
+                                <a target="_blank" href="/serve/561">财政局</a>
+                                <a target="_blank" href="/serve/562">公安局</a>
+                                <a target="_blank" href="/serve/563">司法局</a>
+                                <a target="_blank" href="/serve/564">审计局</a>
+                                <a target="_blank" href="/serve/565">民政局</a>
+                                <a target="_blank" href="/serve/566">民族宗教事务局</a>
+                                <a target="_blank" href="/serve/567">人社局</a>
+                                <a target="_blank" href="/serve/568">信访局</a>
+                                <a target="_blank" href="/serve/569">安监局</a>
+                                <a target="_blank" href="/serve/570">住建局</a>
+                                <a target="_blank" href="/serve/571">规划局</a>
+                                <a target="_blank" href="/serve/572">人防办</a>
+                                <a target="_blank" href="/serve/573">交通局</a>
+                                <a target="_blank" href="/serve/574">农牧业局</a>
+                                <a target="_blank" href="/serve/575">扶贫办</a>
+                                <a target="_blank" href="/serve/576">产业化办</a>
+                                <a target="_blank" href="/serve/577">林业局</a>
+                                <a target="_blank" href="/serve/578">水务局</a>
+                                <a target="_blank" href="/serve/579">旅游局</a>
+                                <a target="_blank" href="/serve/580">教科局</a>
+                                <a target="_blank" href="/serve/581">文体新广局</a>
+                                <a target="_blank" href="/serve/582">卫计局</a>
+                                <a target="_blank" href="/serve/583">爱卫办</a>
+                                <a target="_blank" href="/serve/584">食药监局</a>
+                                <a target="_blank" href="/serve/585">市场监督管理局</a>
+                                <a target="_blank" href="/serve/586">国土局</a>
+                                <a target="_blank" href="/serve/587">环保局</a>
+                                <a target="_blank" href="/serve/588">城管执法局</a>
+                                <a target="_blank" href="/serve/589">招商局</a>
+                                <a target="_blank" href="/serve/590">供销社</a>
+                                <a target="_blank" href="/serve/591">移民局</a>
+                                <a target="_blank" href="/serve/592">农机局</a>
+                                <a target="_blank" href="/serve/593">河西新区管委会</a>
+                                <a target="_blank" href="/serve/594">机场办</a>
+                                <a target="_blank" href="/serve/595">土地储备交易中心</a>
+                                <a target="_blank" href="/serve/596">政务服务中心</a>
+                                <a target="_blank" href="/serve/597">城市建设资金管理中心</a>
+                                <a target="_blank" href="/serve/598">呼伦贝尔岭东工业开发区管委会</a>
+                                <a target="_blank" href="/serve/599">风景名胜区管</a>
+                            </div>
+                        </div>
+                        <!-- //End 行政审批 -->
+                    </div>
+                </li>
+
+            </ul>
+            <!-- //End dt -->
+        </div>
+    </div>
+</div>
+        <style>
+        input[type=text] {
+            height: 26px;
+            line-height: 26px;
+            vertical-align: middle;
+            width: 415px;
+            padding: 0 4px;
+            border: 1px solid #ccc;
+        }
+        textarea {
+            border: 1px solid #ccc;
+        }
+        .list.email {padding: 0 40px;float: left;margin-top: 30px;}
+        .list.email li {
+            width:100%;
+            float: left;
+        }
+        .list.email li.dt {
+            line-height:30px;
+            background: #e5e5e5;
+            -webkit-border-radius: 40px;
+            border-radius: 40px;
+        }
+        .list.email li span {
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space:nowrap;
+            float: left;
+        }
+        .list.email li .s1 {
+            width:30%;
+        }
+        .list.email li .s2 {
+            width:40%;
+        }
+        .list.email li .s3 {
+            width:15%;
+        }
+        .list.email li .s4 {
+            width:15%;
+        }
+        .list.email li.dd span {
+            line-height:41px;
+            border-bottom:1px solid #dfdfdf;
+        }
+    </style>
+    <div class="container mb20">
+        <div class="bd article artlist">
+            <div class="hd">
+                <div class="crumbs">
+                    <span><i class="icon_map"></i></span>
+                    <span>位置：</span>
+                    <span><a target="_blank" href="">首页</a></span>
+                    <span class="gt">&gt;</span>
+                    <span style="color: #999;">互动交流</span>
+                </div>
+                <!--//End crumbs-->
+
+
+                <div id="tsxa_l" class="fl column">
+                    <div class="portlet">
+    <div>
+        <div class="nav_third">
+            <div class="nav_name">互动交流</div>
+            <ul class="nav_ul">
+                                    <li  class="yili" >
+                        <a target="_blank" class="yia" href="/hdjl/myzj.htm">民意征集</a>
+                    </li>
+                                    <li  class="yili checked" >
+                        <a target="_blank" class="yia" href="/hdjl/szxx.htm">市长信箱</a>
+                    </li>
+                                    <li  class="yili" >
+                        <a target="_blank" class="yia" href="/hdjl/bmxx.htm">部门信箱</a>
+                    </li>
+                                    <li  class="yili" >
+                        <a target="_blank" class="yia" href="/hdjl/xwfbh.htm">新闻发布会</a>
+                    </li>
+                                    <li  class="yili" >
+                        <a target="_blank" class="yia" href="/hdjl/xwfbh.htm">在线访谈</a>
+                    </li>
+                            </ul>
+            <div class="pic"><img src="/client/uploads/201709301102.jpg" alt=""></div>
+        </div>
+    </div>
+</div>                </div>
+
+                <div id="tsxa_r" class="fr column">
+                    <div class="mod3 clearfix">
+                        <span class="title fl">市长信箱</span>
+                        <span class="fr" style="color:#9f0007">已答复：13</span>
+                        <span class="fr" style="margin-right: 50px;color:#9f0007">本年度收到信件：13</span>
+                    </div>
+
+                <table class="boardTable" cellspacing="0" cellpadding="0" border="0" align="center" style="font-size: 14px;margin-top:30px;">
+                            <tbody>
+                                <tr>
+                                    <td height="35" width="20%" class="hyxanr1" style="text-align:right;padding-right:14px;">
+                                        <font color="red">*</font>
+                                        姓名：
+                                    </td>
+                                    <td style="width:46%;">
+                                        <input type="text" class="inputxt" name="msgData.name" nullmsg="请填写姓名" datatype="s1-30" errormsg="姓名格式错误，只能为字符串，长度为 1-30！">
+                                    </td>
+                                    <td width="34%" height="35"><div class="Validform_checktip" id="tipDiv_NAME"></div></td>
+                                </tr>
+                                <tr>
+                                    <td height="35" width="20%" class="hyxanr1" style="text-align:right;padding-right:14px;">
+                                        <font color="red">*</font>
+                                        E-Mail：
+                                    </td>
+                                    <td style="width:46%;">
+                                        <input type="text" class="inputxt" name="msgData.email" nullmsg="请填写E-Mail" datatype="e" errormsg="E-Mail格式错误，只能为电子邮箱！">
+                                    </td>
+                                    <td width="34%" height="35"><div class="Validform_checktip" id="tipDiv_EMAIL"></div></td>
+                                </tr>
+                                <tr>
+                                    <td height="35" width="20%" class="hyxanr1" style="text-align:right;padding-right:14px;">
+                                        <font color="red">*</font>
+                                        联系电话：
+                                    </td>
+                                    <td style="width:46%;">
+                                        <input type="text" class="inputxt" name="msgData.tel" nullmsg="请填写联系电话" datatype="telephone" errormsg="联系电话格式错误，只能为手机或固定电话！">
+                                    </td>
+                                    <td width="34%" height="35"><div class="Validform_checktip" id="tipDiv_TEL"></div></td>
+                                </tr>
+                                <tr>
+                                    <td height="35" width="20%" class="hyxanr1" style="text-align:right;padding-right:14px;">
+                                        <font color="red">*</font>
+                                        通讯地址：
+                                    </td>
+                                    <td style="width:46%;">
+                                        <input type="text" class="inputxt" name="msgData.address" nullmsg="请填写通讯地址" datatype="s5-100" errormsg="通讯地址格式错误，只能为字符串，长度为 5-100！">
+                                    </td>
+                                    <td width="34%" height="35"><div class="Validform_checktip" id="tipDiv_ADDRESS"></div></td>
+                                </tr>
+                                <tr>
+                                    <td height="35" width="20%" class="hyxanr1" style="text-align:right;padding-right:14px;">
+                                        <font color="red">*</font>
+                                        标题：
+                                    </td>
+                                    <td style="width:46%;">
+                                        <input type="text" class="inputxt" name="msgData.title" nullmsg="请填写标题" datatype="s2-100" errormsg="标题格式错误，只能为字符串，长度为 2-100！">
+                                    </td>
+                                    <td width="34%" height="35"><div class="Validform_checktip" id="tipDiv_TITLE"></div></td>
+                                </tr>
+                                <tr>
+                                    <td height="35" width="20%" class="hyxanr1" style="text-align:right;padding-right:14px;">
+                                        <font color="red">*</font>
+                                        内容：
+                                    </td>
+                                    <td style="width:46%;">
+                                        <textarea style="width:417px; padding:4px;" rows="10" name="msgData.content" nullmsg="请填写内容" datatype="*2-800" errormsg="内容格式错误，只能为字符串，长度为 2-800！"></textarea>
+                                    </td>
+                                    <td width="34%" height="35"><div class="Validform_checktip" id="tipDiv_CONTENT"></div></td>
+                                </tr>
+                                <tr>
+                                    <td height="35" width="20%" class="hyxanr1" style="text-align:right;padding-right:14px;">
+                                        <font color="red">*</font>
+                                        是否公开：
+                                    </td>
+                                    <td style="width:46%;">
+                                        <input type="radio" class="pr1" id="IS_PUBLIC1" checked="checked" name="msgData.isPublic" value="公开" datatype="*" nullmsg="请选择是否公开！">
+                                        <label for="field.fieldEnName1">公开</label>
+                                        <input type="radio" class="pr1" id="IS_PUBLIC2" name="msgData.isPublic" value="不公开" datatype="*" nullmsg="请选择是否公开！">
+                                        <label for="field.fieldEnName2">不公开</label>
+                                    </td>
+                                    <td width="34%" height="35"><div class="Validform_checktip" id="tipDiv_IS_PUBLIC"></div></td>
+                                </tr>
+
+                                <tr>
+                                    <td align="center" colspan="2">
+                                        <button class="jqTransformButton" type="submit"><span><span>发送</span></span></button>
+                                        <button class="jqTransformButton" type="button" onclick="resetForm()"><span><span>重置</span></span></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                </table>
+                
+                                                 <div class="list email">
+                            <ul>
+                                    <li class="dt"><span class="s1">编号</span><span class="s2">标题</span><span class="s3">已处理情况</span><span class="s4">时间</span></li>
+                                    <li class="dd">
+                                        <span class="s1">20170921060946</span>
+                                        <span class="s2"><a target="_blank" href="/interactive/260/detail/1.html">关于二轮土地的问题</a></span>
+                                        <span class="s3">已处理</span>
+                                        <span class="s4">2017-09-21</span>
+                                    </li>
+                                    <li class="dd">
+                                        <span class="s1">20170921060947</span>
+                                        <span class="s2"><a target="_blank" href="/interactive/260/detail/2.html">公务员跨省调动咨询</a></span>
+                                        <span class="s3">已处理</span>
+                                        <span class="s4">2017-09-21</span>
+                                    </li>
+                                    <li class="dd">
+                                        <span class="s1">20170921060947</span>
+                                        <span class="s2"><a target="_blank" href="/interactive/260/detail/3.html">解决变压器小的问题</a></span>
+                                        <span class="s3">已处理</span>
+                                        <span class="s4">2017-09-21</span>
+                                    </li>
+                                    <li class="dd">
+                                        <span class="s1">20170921060947</span>
+                                         <span class="s2"><a target="_blank" href="/interactive/260/detail/4.html">尚品雅鲁小区东侧道路何时能修</a></span>
+                                         <span class="s3">已处理</span>
+                                         <span class="s4">2017-09-21</span>
+                                    </li>
+                                    <li class="dd">
+                                            <span class="s1">20171108111136</span>
+                                                    <span class="s2"><a target="_blank" href="/interactive/260/detail/5.html">上学问题</a></span>
+                                                    <span class="s3">已处理</span>
+                                                        <span class="s4">2017-11-08</span>
+                                    </li>
+                            </ul>
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer mt20">
+    <div class="hd">
+        <div class="select">
+            <dl>
+                <dt>国家部委<i class="home_icon"></i></dt>
+                <dd>
+                    <a target="_black" href="http://www.mfa.gov.cn">外交部</a>
+                    <a target="_black" href="http://www.ndrc.gov.cn">发展改革委</a>
+                    <a target="_black" href="http://www.moe.gov.cn">教育部</a>
+                    <a target="_black" href="http://www.most.gov.cn">科技部</a>
+                    <a target="_black" href="http://www.miit.gov.cn">工业和信息化部</a>
+                    <a target="_black" href="http://www.seac.gov.cn">国家民委</a>
+                    <a target="_black" href="http://www.mps.gov.cn">公安部</a>
+                    <a target="_black" href="http://www.mos.gov.cn">监察部</a>
+                    <a target="_black" href="http://www.mca.gov.cn">民政部</a>
+                    <a target="_black" href="http://www.moj.gov.cn">司法部</a>
+                    <a target="_black" href="http://www.mof.gov.cn">财政部</a>
+                    <a target="_black" href="http://www.mohrss.gov.cn">人力资源社会保障部</a>
+                    <a target="_black" href="http://www.mlr.gov.cn">国土资源部</a>
+                    <a target="_black" href="http://www.mep.gov.cn">环境保护部</a>
+                    <a target="_black" href="http://www.mohurd.gov.cn">住房和城乡建设部</a>
+                    <a target="_black" href="http://www.chinasarft.gov.cn">广电总局</a>
+                    <a target="_black" href="http://www.gapp.gov.cn">新闻出版总署</a>
+                    <a target="_black" href="http://www.sport.gov.cn">体育总局</a>
+                    <a target="_black" href="http://www.stats.gov.cn">统计局</a>
+                    <a target="_black" href="http://www.chinasafety.gov.cn">安全监管总局</a>
+                    <a target="_black" href="http://www.moc.gov.cn">交通运输部</a>
+                    <a target="_black" href="http://www.mwr.gov.cn">水利部</a>
+                    <a target="_black" href="http://www.agri.gov.cn">农业部</a>
+                    <a target="_black" href="http://www.mofcom.gov.cn">商务部</a>
+                    <a target="_black" href="http://www.mcprc.gov.cn">文化部</a>
+                    <a target="_black" href="http://www.moh.gov.cn">卫生计生委</a>
+                    <a target="_black" href="http://www.pbc.gov.cn">人民银行</a>
+                    <a target="_black" href="http://www.audit.gov.cn">审计署</a>
+                    <a target="_black" href="http://www.sasac.gov.cn">国资委</a>
+                    <a target="_black" href="http://www.customs.gov.cn">海关总署</a>
+                    <a target="_black" href="http://www.chinatax.gov.cn">税务总局</a>
+                    <a target="_black" href="http://www.saic.gov.cn">工商总局</a>
+                    <a target="_black" href="http://www.aqsiq.gov.cn">质检总局</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>省市链接<i class="home_icon"></i></dt>
+                <dd>
+                    <a target="_black" href="http://www.beijing.gov.cn">北京</a>
+                    <a target="_black" href="http://www.shanghai.gov.cn">上海</a>
+                    <a target="_black" href="http://www.tj.gov.cn">天津</a>
+                    <a target="_black" href="http://www.cq.gov.cn">重庆</a>
+                    <a target="_black" href="http://www.nmg.gov.cn">内蒙古</a>
+                    <a target="_black" href="http://www.zhejiang.gov.cn">浙江</a>
+                    <a target="_black" href="http://www.jiangsu.gov.cn">江苏</a>
+                    <a target="_black" href="http://www.gd.gov.cn">广东</a>
+                    <a target="_black" href="http://www.sd.gov.cn">山东</a>
+                    <a target="_black" href="http://www.hunan.gov.cn">湖南</a>
+                    <a target="_black" href="http://www.cnhubei.gov.cn">湖北</a>
+                    <a target="_black" href="http://www.ah.gov.cn">安徽</a>
+                    <a target="_black" href="http://www.yn.gov.cn">云南</a>
+                    <a target="_black" href="http://www.gxzf.gov.cn">广西</a>
+                    <a target="_black" href="http://www.gzgov.gov.cn">贵州</a>
+                    <a target="_black" href="http://www.xizang.gov.cn">西藏</a>
+                    <a target="_black" href="http://www.sc.gov.cn">四川</a>
+                    <a target="_black" href="http://www.fujian.gov.cn">福建</a>
+                    <a target="_black" href="http://www.jiangxi.gov.cn">江西</a>
+                    <a target="_black" href="http://www.hainan.gov.cn">海南</a>
+                    <a target="_black" href="http://www.hlj.gov.cn">黑龙江</a>
+                    <a target="_black" href="http://www.jl.gov.cn">吉林</a>
+                    <a target="_black" href="http://www.ln.gov.cn">辽宁</a>
+                    <a target="_black" href="http://www.shaanxi.gov.cn">陕西</a>
+                    <a target="_black" href="http://www.qh.gov.cn">青海</a>
+                    <a target="_black" href="http://www.shanxigov.cn">山西</a>
+                    <a target="_black" href="http://www.gansu.gov.cn">甘肃</a>
+                    <a target="_black" href="http://www.henan.gov.cn">河南</a>
+                    <a target="_black" href="http://www.hebei.gov.cn">河北</a>
+                    <a target="_black" href="http://www.xinjiang.gov.cn">新疆</a>
+                    <a target="_black" href="http://www.nx.gov.cn">宁夏</a>
+                    <a target="_black" href="http://www.info.gov.hk">香港</a>
+                    <a target="_black" href="http://www.macau.gov.mo">澳门</a>
+                    <a target="_black" href="http://www.chinataiwan.org">台湾</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>盟市链接<i class="home_icon"></i></dt>
+                <dd>
+                    <a target="_black" href="http://www.huhhot.gov.cn/home/index.asp">呼和浩特市</a>
+                    <a target="_black" href="http://www.hlbe.gov.cn/">呼伦贝尔市</a>
+                    <a target="_black" href="http://www.baotou.gov.cn">包头市</a>
+                    <a target="_black" href="http://www.xam.gov.cn">兴安盟</a>
+                    <a target="_black" href="http://www.tongliao.gov.cn">通辽市</a>
+                    <a target="_black" href="http://www.chifeng.gov.cn">赤峰市</a>
+                    <a target="_black" href="http://www.xlgl.gov.cn">锡林郭勒盟</a>
+                    <a target="_black" href="http://www.wulanchabu.gov.cn">乌兰察布市</a>
+                    <a target="_black" href="http://www.ordos.gov.cn">鄂尔多斯市</a>
+                    <a target="_black" href="http://www.bynr.gov.cn">巴彦淖尔市</a>
+                    <a target="_black" href="http://www.wuhai.gov.cn">乌海市</a>
+                    <a target="_black" href="http://www.als.gov.cn/main">阿拉善盟</a>
+                    <a target="_black" href="http://www.elht.gov.cn">二连浩特市</a>
+                </dd>
+            </dl>
+            <dl style="margin-right: 0;">
+                <dt>各旗市区<i class="home_icon"></i></dt>
+                <dd>
+                    <a target="_black" href="http://www.hailar.gov.cn">海拉尔区</a>
+                    <a target="_black" href="http://www.manzhouli.gov.cn">满洲里市</a>
+                    <a target="_black" href="http://www.yks.gov.cn">牙克石市</a>
+                    <a target="_black" href="http://www.arq.gov.cn">阿荣旗</a>
+                    <a target="_black" href="http://www.cbrhq.gov.cn/xnmj/index.htm">陈巴尔虎旗</a>
+                    <a target="_black" href="http://www.eegnzw.gov.cn">额尔古纳市</a>
+                    <a target="_black" href="http://www.elc.gov.cn">鄂伦春自治旗</a>
+                    <a target="_black" href="http://www.ewenke.gov.cn">鄂温克自治旗</a>
+                    <a target="_black" href="http://www.genhe.gov.cn">根河市</a>
+                    <a target="_black" href="http://www.mldw.gov.cn/welcome">莫力达瓦达斡尔族自治旗</a>
+                    <a target="_black" href="http://www.xzq.gov.cn/Article/Index.asp">新巴尔虎左旗</a>
+                    <a target="_black" href="http://www.xbehyq.gov.cn/main/index.jsp">新巴尔虎右旗</a>
+                </dd>
+            </dl>
+        </div>
+        <!--//End select -->
+        <div class="base">
+            <div class="sleft">
+                <p><a href="">法律声明</a> | <a href="">网站地图</a> | <a href="">使用帮助</a> | <a href="">关于我们</a></p>
+                <p>
+                    <span>主办:内蒙古·扎兰屯市人民政府</span>
+                    <span>技术支持：呼伦贝尔市乐扣思电子商务贸易有限公司</span>
+                </p>
+                <p>
+                    <span><a href="">蒙ICP备06005947号</a></span>
+                    <span><a href="">蒙公网安备 15078302000121号</a></span>
+                    <span>监督热线：0470-3203911</span>
+                </p>
+                <p>Copyright © 2013 www.zhalantun.gov.cn All Rights Reserved</p>
+            </div>
+           
+            <div class="sright">
+               <span class="sTop">
+                    <img src="http://121.43.68.40/exposure/images/jiucuo.png?v=1507830002" complete="complete"/>
+                </span>
+                 <span style="margin:0 12px;">
+                     <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/07/129/0364/41319780/CA071290364413197800000.js' type='text/javascript'%3E%3C/script%3E"));</script>
+                </span>
+                <span class="sTop">
+                    <img src="/client/images/footer-1.jpg" complete="complete"/>
+                </span>
+            </div>
+        </div>
+        <!--//End base-->
+    </div>
+</div>
+<!--//End home-->
+    <div class="slide-2">
+        <div class="item">
+            <div class="name"><i class="icon icon1"></i></div>
+        </div>
+        <div class="item" id="wechat-slide">
+            <div class="name"><i class="icon icon2"></i></div>
+            <div class="drawer"><img src="/client/images/right_ewm.jpg"></div>
+        </div>
+        <div class="item">
+            <div class="name"><a href="http://weibo.com/zltzwgk" target="_blank"><i class="icon icon3"></i></a></div>
+        </div>
+        <div class="item" id="goTop">
+            <div class="name"><i class="icon icon4"></i></div>
+        </div>
+    </div>
+
+
+
+
+</body>
+<script type="text/javascript" src="/client/js/jquery.min.js"></script>
+<script type="text/javascript" src="/client/org/layer/layer.js"></script>
+<script type="text/javascript" src="/client/js/utils.js"></script>
+<script type="text/javascript" src="/client/js/system.js?t=1511149554"></script>
+<script>
+    (function(){
+        startTime();
+    })();
+
+    function startTime()
+    {
+        var today=new Date();//定义日期对象
+        var yyyy = today.getFullYear();//通过日期对象的getFullYear()方法返回年
+        var MM = today.getMonth()+1;//通过日期对象的getMonth()方法返回年
+        var dd = today.getDate();//通过日期对象的getDate()方法返回年
+        var hh=today.getHours();//通过日期对象的getHours方法返回小时
+        var mm=today.getMinutes();//通过日期对象的getMinutes方法返回分钟
+        var ss=today.getSeconds();//通过日期对象的getSeconds方法返回秒
+        // 如果分钟或小时的值小于10，则在其值前加0，比如如果时间是下午3点20分9秒的话，则显示15：20：09
+        MM=checkTime(MM);
+        dd=checkTime(dd);
+        mm=checkTime(mm);
+        ss=checkTime(ss);
+        var day; //用于保存星期（getDay()方法得到星期编号）
+        if(today.getDay()==0)   day   =   "星期日 "
+        if(today.getDay()==1)   day   =   "星期一 "
+        if(today.getDay()==2)   day   =   "星期二 "
+        if(today.getDay()==3)   day   =   "星期三 "
+        if(today.getDay()==4)   day   =   "星期四 "
+        if(today.getDay()==5)   day   =   "星期五 "
+        if(today.getDay()==6)   day   =   "星期六 "
+        document.getElementById('nowDateTimeSpan').innerHTML=yyyy+"-"+MM +"-"+ dd +" " + hh+":"+mm+":"+ss+"   " + day;
+        setTimeout('startTime()',1000);//每一秒中重新加载startTime()方法
+    }
+
+    function checkTime(i) {
+        if (i<10){
+            i="0" + i;
+        }
+        return i;
+    }
+
+
+
+</script>
+    <script>
+        $(function(){
+            interactivePage.list.init();
+        });
+    </script>
+</html>

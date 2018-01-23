@@ -1,0 +1,52 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.header{position: relative;}
+.menu_search{position: absolute;right: 5%;top: 18%;width: 4.5rem;height: 3rem;background: url(../images/zgtl_mobile_photo_20170224-02.png) no-repeat center center;background-size: 2.5rem 2rem;}
+.h_sch_btn{position: absolute;left: -75%;top: 0;width: 4.5rem;height: 3rem;background: url(../images/zgtl_mobile_photo_20170224-06.png) no-repeat center center;background-size: 2rem 2rem;}
+.search_box{width: 96%;background: #4976bc;padding:1rem 2%;margin-bottom: .5rem;display: none;}
+.dis_Block{display: block;}
+.changeBg{background: url(../images/zgtl_mobile_photo_20170224-03.png) no-repeat center center;background-size: 2rem 2rem;}
+
+.h_input{width: 96%;border-bottom: .1rem solid #7798cd;padding:0 2%;padding-bottom: 1rem;}
+.h_input input {border:none;outline: none;}
+.h_input .s_txt{width: 75%;height: 2.4rem;line-height: 2.4rem;padding-left: 1%;}
+.h_input .s_btn{width: 20%;height: 2.4rem;line-height: 2.4rem;background: #c70101;font-family:'微软雅黑';font-size:1.6rem;color: #fff;margin-left: 2%;}
+.h_subNav{text-align: center;color: #fff;padding-top: .6rem;}
+.h_subNav a{color: #fff;padding: 0 1.2rem;display: inline-block;}
+.h_subNav .dis_span{display: none;}
+
+.head_nav{width:100%;border-bottom: .3rem solid #003259;background: #4976bc;}
+.sd_box{padding: .5rem 2%;}
+.sd_box a{display:block;width:25%;float:left;font-size:1.6rem;color:#fff;text-decoration: none;text-align: center;padding: .5rem 0;}
+.sd_box a:nth-child(1),.sd_box a:nth-child(2),.sd_box a:nth-child(3),.sd_box a:nth-child(4){border-bottom: .1rem solid #7798cd;}
+.sd_box a:nth-child(5),.sd_box a:nth-child(6),.sd_box a:nth-child(7),.sd_box a:nth-child(8){border-bottom: .1rem solid #7798cd;}
+.sd_box a:nth-child(9),.sd_box a:nth-child(10),.sd_box a:nth-child(11),.sd_box a:nth-child(12){border-bottom: .1rem solid #7798cd;}
+
+@media screen and (min-width:1000px) and (max-width:1030px){
+	.menu_search{top: 45%;}
+	.h_subNav .dis_span{display:inline-block;}
+}
+@media screen and (min-width:768px) and (max-width:800px){
+	.menu_search{top: 40%;}
+	.h_subNav .dis_span{display:inline-block;}
+}
+@media screen and (min-width:600px) and (max-width:700px){
+	.menu_search{top: 35%;}
+	.h_subNav .dis_span{display:inline-block;}
+}
+@media screen and (min-width:414px) and (max-width:480px){
+	.menu_search{top: 25%;}
+	.h_subNav a{padding: 0 1rem;}
+}
+@media screen and (min-width:375px) and (max-width:413px){
+	.menu_search{top:22%;}
+	.h_subNav a{padding: 0 1rem;}
+}
+@media screen and (max-width:374px){
+	.h_subNav a{padding: 0 1rem;}
+}
+
+.footer{padding: 2rem 0;text-align: center;background:#4976bc;margin-top: 2rem;color: #fff;}
+.footer a{color: #fff;padding: 0 1rem;font-size: 1.6rem;}
+
+.back_top{width:4rem;height:4rem; background:url(../images/jxw_mobile_photo_201609-04.png) no-repeat;position:fixed;right:1rem;bottom:3rem;background-size:95%;}

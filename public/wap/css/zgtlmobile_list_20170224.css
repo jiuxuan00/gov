@@ -1,0 +1,503 @@
+﻿@charset "utf-8";
+/* CSS Document */
+html {
+    font-size: 10px;
+}
+
+.wrapper {
+    width: 100%;
+    font-family: '微软雅黑';
+    font-size: 1.4rem;
+}
+
+.wrapper img {
+    width: 100%;
+}
+
+.wrapper a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1030px) {
+    .menu_search {
+        top: 45%;
+    }
+
+    .h_subNav .dis_span {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 800px) {
+    .menu_search {
+        top: 40%;
+    }
+
+    .h_subNav .dis_span {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 700px) {
+    .menu_search {
+        top: 35%;
+    }
+
+    .h_subNav .dis_span {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 414px) and (max-width: 480px) {
+    .menu_search {
+        top: 25%;
+    }
+
+    .h_subNav a {
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 413px) {
+    .menu_search {
+        top: 22%;
+    }
+
+    .h_subNav a {
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .h_subNav a {
+        padding: 0 1rem;
+    }
+}
+
+/*焦点图css*/
+.m_banner_con {
+}
+
+.m_banner {
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.m_banner img {
+    width: 100%;
+    height: 23rem;
+}
+
+.slide_list {
+    overflow: hidden;
+    position: relative;
+}
+
+.slide_list li {
+    position: relative;
+    float: left;
+}
+
+.slide_list li .text {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-indent: 10px;
+    background: #515084;
+    filter: alpha(opacity=40);
+    opacity: .9;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    z-index: 100;
+}
+
+.slide_list li .text a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.slide_nav {
+    float: right;
+    margin-top: -22px;
+}
+
+.slide_nav li {
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin: 0 4px;
+    background: #fff;
+    position: relative;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slide_nav .selected {
+    background: #fc5004;
+}
+
+.tadoy_news {
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+/************资讯中心Start************/
+.ld_title {
+    border-bottom: .1rem solid #c6c6c6;
+}
+
+.leader_action {
+    margin-top: 1rem;
+    overflow: hidden;
+}
+
+.cursite {
+    width: 98%;
+    margin: 0 auto;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.4rem;
+    color: #3a3a3a;
+}
+
+.cursite a {
+    color: #3a3a3a;
+}
+
+.gover_ser {
+    width: 98%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.gover_ser h1 {
+    border-bottom: 2px solid #024f8b;
+    font-size: 1.6rem;
+    color: #034290;
+    text-align: center;
+    float: left;
+    margin-left: .2rem;
+    position: relative;
+    padding: 0 .5rem .5rem .5rem;
+    font-weight: normal;
+}
+
+.gover_ser i {
+    display: block;
+    width: 100%;
+    height: .3rem;
+    background: url(../images/tlszf_overview_201611-04.png) no-repeat center center;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+.ld_listblock h1 {
+    height: 2.6rem;
+    line-height: 2.6rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-left: 1rem;
+    background: url(../images/zgtl_mobile_photo_20170224-05.png) no-repeat left center;
+    background-size: .4rem;
+}
+
+.ld_listblock .listp {
+    font-size: 1rem;
+    color: #484747;
+    line-height: 1.5rem;
+    padding: 0 1rem;
+    text-align: justify;
+    height: 4.5rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.ld_box {
+    padding: 0 1rem;
+    margin-top: 1rem;
+}
+
+.ld_lists li {
+    height: 2.6rem;
+    line-height: 2.6rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-left: 1rem;
+    background: url(../images/zgtl_mobile_photo_20170224-05.png) no-repeat left center;
+    background-size: .4rem;
+}
+
+.more_a {
+    padding: .5rem 0;
+    text-align: center;
+    background: #f5f5f5;
+    margin: .5rem auto;
+}
+
+.more_a a {
+    color: #666565;
+    padding-right: 1.4rem;
+    background: url(../images/zgtl_mobile_photo_20170224-07.png) no-repeat 56% .7rem;
+    background-size: .9rem;
+    display: block;
+}
+
+.small_mar {
+    margin-top: .5rem;
+}
+
+/************资讯中心End************/
+
+/************我要问政Start************/
+.mailbox_list ul {
+    width: 97%;
+    margin: 0 auto;
+}
+
+.mailbox_list ul li {
+    margin-top: 1rem;
+    height: 3.2rem;
+    line-height: 3.2rem;
+    text-align: center;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    color: #ffffff;
+    float: left;
+}
+
+.mailbox_list ul li a {
+    color: #ffffff;
+    height: 3.2rem;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.mailbox_list ul li:nth-child(even) {
+    width: 47%;
+    margin-left: 3%;
+}
+
+.mailbox_list ul li:nth-child(odd) {
+    width: 47%;
+    margin-right: 3%;
+}
+
+.mailbox_list ul li:nth-child(1) {
+    background: #4976bc url(../images/tlmoblie_wywz_mailbg01_03.png) no-repeat 15%;
+    background-size: 1.8rem 1.8rem;
+}
+
+.mailbox_list ul li:nth-child(2) {
+    background: #4976bc url(../images/tlmoblie_wywz_mailbg02_03.png) no-repeat 15%;
+    background-size: 1.8rem 1.8rem;
+}
+
+.mailbox_list ul li:nth-child(3) {
+    background: #4976bc url(../images/tlmoblie_wywz_mailbg03_03.png) no-repeat 15%;
+    background-size: 1.8rem 1.8rem;
+}
+
+.mailbox_list ul li:nth-child(4) {
+    background: #4976bc url(../images/tlmoblie_wywz_mailbg04_03.png) no-repeat 15%;
+    background-size: 1.6rem 1.6rem;
+}
+
+/************我要问政End************/
+
+/**************魅力铜都Start***************/
+.picTL_list {
+    width: 96%;
+    margin: 1rem auto 2rem;
+}
+
+.picTL_list a {
+    font-size: 1.6rem;
+    width: 33.33%;
+    float: left;
+    display: block;
+    line-height: 3rem;
+}
+
+.picTL_list a:nth-child(1), .picTL_list a:nth-child(2), .picTL_list a:nth-child(3) {
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.picTL_list span {
+    background: url(../images/tlmobile_charmtl_icon_03.png) no-repeat 10% 50%;
+    padding-left: 1.5rem;
+    background-size: .5rem .9rem;
+}
+
+.city_facts {
+    margin: 1.5rem 0 1rem
+}
+
+.city_facts li {
+    background-color: #4976bc;
+    border-radius: .5rem;
+    width: 32%;
+    float: left;
+    line-height: 3rem;
+    height: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.city_facts li a {
+    color: #ffffff;
+}
+
+.city_facts li:nth-child(2), .city_facts li:nth-child(5), .city_facts li:nth-child(8) {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.his_culture {
+    margin: 1.5rem 0 1rem
+}
+
+.his_culture li {
+    border-radius: .5rem;
+    width: 48%;
+    float: left;
+    line-height: 3rem;
+    height: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.bgblue {
+    background-color: #4976bc;
+}
+
+.bggrey {
+    background-color: #9ca1c7;
+}
+
+.his_culture li:nth-child(2n) {
+    float: right;
+}
+
+.his_culture li a {
+    color: #ffffff;
+}
+
+/**************魅力铜都End***************/
+
+/***************领导之窗S **************/
+.leader_list {
+    margin-top: 1.5rem;
+}
+
+.leader_win_tit {
+    border-bottom: .1rem solid #c6c6c6;
+}
+
+.flex_box {
+    width: 98%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_box span {
+    display: block;
+    padding-bottom: .5rem;
+    font-size: 1.8rem;
+    color: #7d7d7e;
+    text-align: center;
+    float: left;
+    margin-left: .2rem;
+    position: relative;
+    flex: 1;
+}
+
+.flex_box span a {
+    color: #7d7d7e;
+}
+
+.flex_box i {
+    display: block;
+    width: 100%;
+    height: .3rem;
+    background: url(../images/tlszf_overview_201611-04.png) no-repeat center center;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    display: none;
+}
+
+.flex_box .current {
+    color: #034290;
+    border-bottom: .2rem solid #024f8b;
+}
+
+.flex_box .current i {
+    display: block;
+}
+
+.leader_win_cont {
+    width: 96%;
+    margin: 1rem auto 0;
+}
+
+.leader_ltopimg {
+    width: 25%;
+    float: left;
+}
+
+.leader_ltopR {
+    width: 70%;
+    float: right;
+}
+
+.leader_ltopR h1 {
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.leader_ltopR span {
+    font-size: 1.2rem;
+    color: #1d5299;
+}
+
+.leader_ltopR .Division {
+    font-size: 1.2rem
+}
+
+.leader_lbottom {
+    margin-top: 1rem;
+}
+
+.leader_lbottom span {
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    color: #1d5299;
+}
+
+.leader_lbottom .list_cont {
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+/***************领导之窗E **************/
